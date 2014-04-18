@@ -3,8 +3,8 @@ Contributors: designorbital
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: twitter, twitter feed, tweet, twitter widget, feed, widget, twitter sidebar, social, social media, sidebar, plugin
-Requires at least: 3.6
-Tested up to: 3.8
+Requires at least: 3.7
+Tested up to: 3.9
 Stable tag: 0.1
 
 Add twitter feeds on your WordPress site by using the Easy Twitter Feed Widget plugin.
