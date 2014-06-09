@@ -77,7 +77,7 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 		foreach ( $data_twitter_widget as $key => $val ) {
 			$data_twitter_widget_nv .= $key . '=' . '"' . esc_attr( $val ) . '"' . ' ';
 		}
-
+		
 		/** Open the output of the widget. */
 		echo $before_widget;
 		
@@ -149,6 +149,7 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 		
 		$title = strip_tags( $instance['title'] );
 		$twitter_widget_tweet_limit = array_merge( array( 0 => 'default' ), array_combine( range( 1, 20 ), range( 1, 20 ) ) );
+		$twitter_widget_show_replies = array( 'true' => 'Yes', 'false' => 'No' );
 		$twitter_widget_width = range( 180, 520, 20 );
 		$twitter_widget_height = range( 200, 600, 50 );
 		$twitter_widget_theme = array( 'light' => 'Light', 'dark' => 'Dark' );
@@ -185,7 +186,7 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id( 'twitter_widget_show_replies' ); ?>"><?php _e( 'Show Replies:', 'kamn-easy-twitter-feed-widget' ); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'twitter_widget_show_replies' ); ?>" name="<?php echo $this->get_field_name( 'twitter_widget_show_replies' ); ?>">
-              <?php foreach ( $boolean as $key => $val ): ?>
+              <?php foreach ( $twitter_widget_show_replies as $key => $val ): ?>
 			    <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $instance['twitter_widget_show_replies'], $key ); ?>><?php echo esc_html( $val ); ?></option>
 			  <?php endforeach; ?>
             </select>
@@ -286,7 +287,7 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 			'twitter_widget_id' => '344713329262084096',
 			'twitter_widget_screen_name' => 'designorbital',
 			'twitter_widget_tweet_limit' => 0,
-			'twitter_widget_show_replies' => 0,			
+			'twitter_widget_show_replies' => 'false',			
 			'twitter_widget_width' => 300,
 			'twitter_widget_height' => 250,
 			'twitter_widget_theme' => 'light',

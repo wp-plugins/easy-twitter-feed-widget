@@ -11,8 +11,10 @@
   <?php settings_errors(); ?>
 
   <div class="kamn-easy-twitter-feed-widget-promo-wrapper">
-    <a href="http://designorbital.com/premium-wordpress-themes/" class="button button-primary button-hero" target="_blank"><?php _e( 'Premium WordPress Themes', 'kamn-easy-twitter-feed-widget' ); ?></a>
-    <a href="http://designorbital.com/free-wordpress-themes/" class="button button-hero" target="_blank"><?php _e( 'Free WordPress Themes', 'kamn-easy-twitter-feed-widget' ); ?></a>
+    <a href="http://designorbital.com/premium-wordpress-themes/?utm_source=wporg-etfw&utm_medium=button&utm_campaign=premium-wp-themes" class="button button-primary button-hero" target="_blank"><?php _e( 'Premium WordPress Themes', 'kamn-easy-twitter-feed-widget' ); ?></a>
+    <a href="http://designorbital.com/free-wordpress-themes/?utm_source=wporg-etfw&utm_medium=button&utm_campaign=free-wp-themes" class="button button-hero" target="_blank"><?php _e( 'Free WordPress Themes', 'kamn-easy-twitter-feed-widget' ); ?></a>
+    <a href="https://www.facebook.com/designorbital" class="button button-hero" target="_blank"><?php _e( 'Like Us On Facebook', 'kamn-easy-twitter-feed-widget' ); ?></a>
+    <a href="https://twitter.com/designorbital" class="button button-hero" target="_blank"><?php _e( 'Follow On Twitter', 'kamn-easy-twitter-feed-widget' ); ?></a>
   </div>
   
   <form action="options.php" method="post" id="kamn-easy-twitter-feed-widget-form-wrapper">

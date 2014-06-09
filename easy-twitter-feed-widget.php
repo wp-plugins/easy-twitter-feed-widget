@@ -7,7 +7,7 @@ Author: DesignOrbital.com
 Author URI: http://designorbital.com
 Text Domain: kamn-easy-twitter-feed-widget
 Domain Path: /languages/
-Version: 0.1
+Version: 0.2
 License: GPL v3
 
 Easy Twitter Feed Widget Plugin
